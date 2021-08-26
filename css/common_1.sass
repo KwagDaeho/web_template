@@ -1,0 +1,77 @@
+// common.sass is about overall form of the entire document, header, footer
+
+html
+  text-align: center  
+header
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 20
+  width: 100%
+  height: 60px
+  background-color: rgba(0,0,0,0.4)
+  color: #fff
+  >div.wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    text-align: center
+  a
+    display: block
+    color: #fff
+    &:hover
+      color:#fff
+  .tp_header_logo
+    width: 100px
+    display: inline-block
+    
+section
+  width: 100%
+  padding: 5vh 0
+nav
+  width: 50%
+  display: none
+h1
+  font-size: 2em
+.tp_gnb
+  display: flex
+  justify-content: space-between
+.modal_btn
+  z-index: 11
+  position: absolute
+  right: 10px
+  width: 50px
+  font-size: 25px
+  line-height: 1em
+.tp_header_logo, .tp_gnb, .modal_btn
+  height: 100%
+  line-height: 60px
+.tp_header_logo a, .tp_gnb>li>a
+  padding: 0 10px
+.modal_window
+  display: none
+  z-index: 10
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  background-color: #666
+.tp_modal_gnb
+  padding-top: 20vh
+  >li
+    background-color: #999
+    border: 1px solid #000
+    >a
+      display: block
+      color :#fff
+.tp_btn
+      a
+        display: block
+        width: 150px
+        padding: 5px 10px
+        margin: 20px auto 0
+        text-align: center
+        font-size: 0.8em
+        transition: 0.5s

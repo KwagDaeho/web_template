@@ -1,0 +1,185 @@
+@media screen and (min-width: 768px) {
+  .tp_list {
+    margin-top: 50px;
+  }
+  .sec01 {
+    height: 500px;
+  }
+  .sec01 .banner_01 {
+    padding-top: 150px;
+  }
+  .sec02 .list_01 li {
+    width: 20%;
+    height: 250px;
+    margin: 50px 20px;
+  }
+  .sec02 .list_02 li {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+  }
+  .sec02 .list_02 li::before {
+    width: 30px;
+    height: 3px;
+  }
+  .sec02 .list_05 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0;
+    border: 1px solid #000;
+    border-left: 0;
+    border-right: 0;
+  }
+  .sec02 .list_05 li {
+    height: 80px;
+    margin: 0;
+  }
+  .sec02 .list_05 li h2 {
+    padding: 0 20px;
+    line-height: 80px;
+  }
+  .sec02 .list_05 li div {
+    width: 75%;
+    top: 0;
+    left: 25%;
+    text-align: left;
+  }
+  .sec02 .list_05 li div dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 320px;
+  }
+  .sec02 .list_05 .on h2 {
+    border-bottom-width: 0;
+    border-right: 2px solid #000;
+  }
+  .sec02 .list_06 li {
+    width: 50%;
+    border-left-width: 0;
+  }
+  .sec02 .list_06 li:nth-of-type(7) {
+    border-bottom-width: 1px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sec01 {
+    height: 100vh;
+  }
+  .sec01 .banner_01 {
+    text-align: left;
+    padding-top: 0;
+  }
+  .sec01 .banner_01 .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sec01 .banner_01 h1 {
+    font-size: 4em;
+  }
+  .sec01 .banner_01 .tp_btn_01 a {
+    width: 200px;
+    height: 60px;
+    line-height: 50px;
+    margin-left: 0;
+    font-size: 1em;
+  }
+  .sec02 .list_06 li {
+    width: 25%;
+  }
+  .sec02 .list_06 li:nth-of-type(5), .sec02 .list_06 li:nth-of-type(6) {
+    border-bottom-width: 1px;
+  }
+  .sec03 .sub_banner_01 .swiper_image_textbox div.image_wrap {
+    width: calc(60vw + 100px);
+    height: calc(30vw + 150px);
+  }
+  .sec03 .sub_banner_01 .image_swiper {
+    width: calc(90vw + 200px);
+    height: 30vw;
+    overflow: visible;
+  }
+  .sec03 .sub_banner_01 .image_swiper .swiper-button-next, .sec03 .sub_banner_01 .image_swiper .swiper-button-prev {
+    bottom: -100px;
+  }
+  .sec03 .sub_banner_01 .image_swiper .swiper-button-prev {
+    left: 37vw;
+    padding-right: 8px;
+  }
+  .sec03 .sub_banner_01 .image_swiper .swiper-button-next {
+    right: 55vw;
+    padding-left: 8px;
+  }
+  .sec03 .sub_banner_01 .textbox_swiper {
+    z-index: 0;
+    width: 40%;
+    right: 0;
+    bottom: 0;
+    height: 30vw;
+  }
+  .sec03 .sub_banner_01 .textbox_swiper .swiper-slide {
+    padding: 50px 150px;
+  }
+  .sec03 .sub_banner_01 .textbox_swiper .swiper-slide h2 {
+    text-indent: -7px;
+  }
+  .sec03 .sub_banner_02 .text_box {
+    position: relative;
+    left: -15vw;
+  }
+  .sec04 .table_01 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec04 .table_01 dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #000;
+  }
+  .sec04 .table_01 dl * {
+    width: 20%;
+    border-top: 0 solid #000;
+    border-left: 1px solid #000;
+  }
+  .sec04 .table_01 dl:first-child {
+    border-right: 0;
+    border-top: 0;
+  }
+  .sec04 .table_01 dl dt {
+    border-left: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .sec01 .banner_01 .wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sec01 .banner_01 .text_box {
+    padding-left: 10%;
+  }
+  .sec01 .banner_01 .banner_01_image {
+    width: 36vw;
+    height: 27vw;
+  }
+}
+/*# sourceMappingURL=index_1_res.css.map */

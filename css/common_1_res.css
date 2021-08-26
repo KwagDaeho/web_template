@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+  header {
+    height: 100px;
+  }
+  .tp_header_logo, .tp_gnb, .modal_btn {
+    line-height: 100px;
+  }
+  .tp_header_logo a, .tp_gnb > li > a {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    min-height: 100vh;
+  }
+  nav {
+    display: block;
+  }
+  .tp_gnb::before {
+    content: '';
+    display: block;
+  }
+  .tp_gnb::after {
+    content: '';
+    display: block;
+  }
+  .modal_btn {
+    position: inherit;
+  }
+  .tp_on_pc {
+    display: block;
+  }
+}
+/*# sourceMappingURL=common_1_res.css.map */
