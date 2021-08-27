@@ -1,4 +1,16 @@
 $(function () {
+  // list_01
+  function list_01_copy() {
+    const list01_num = $(".list_01 li").length;
+    let list01_div = document.querySelectorAll(`.list_01_div`);
+    let list01_hover = document.querySelectorAll(`.list_01_hover`);
+    for (let i = 0; i < list01_num; i++) {
+      let div_html = list01_div[i].innerHTML;
+      list01_hover[i].innerHTML = div_html;
+    }
+  }
+  list_01_copy();
+
   // list_03
   $(".list_03 li").mouseenter(function () {
     $(this).css("transform", "scale(1.2)");

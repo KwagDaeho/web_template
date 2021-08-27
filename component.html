@@ -17,7 +17,7 @@
     <title>TITLE HERE</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <!-- 위 2개 태그 : swiper CDN -->
+    <!-- 위 태그 2줄 : swiper CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -62,7 +62,7 @@
 
     <div id="main_contents">
       <section class="sec01 section01_main_banner">
-        <div class="swiper-container tp_main_banner_swiper">
+        <div class="swiper-container tp_main_banner_swiper main_banner_01">
           <div class="swiper-wrapper">
             <div class="swiper-slide tp_banner banner_01">
               <div class="wrap">
@@ -92,26 +92,39 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
+        <!-- 메인배너 swiper 설정 -->
+        <script>
+          var swiper = new Swiper(".tp_main_banner_swiper", {
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
       </section>
-      <!-- 메인배너 swiper 설정 -->
-      <script>
-        var swiper = new Swiper(".tp_main_banner_swiper", {
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      </script>
+
       <!-- sec01 End -->
 
       <section class="sec02">
         <div class="wrap">
           <ol class="tp_list list_01">
-            <li>List_01</li>
-            <li>List_01</li>
-            <li>List_01</li>
-            <li>List_01</li>
+            <li>
+              <div class="list_01_div">List_01</div>
+              <div class="list_01_hover"></div>
+            </li>
+            <li>
+              <div class="list_01_div">List_01</div>
+              <div class="list_01_hover"></div>
+            </li>
+            <li>
+              <div class="list_01_div">List_01</div>
+              <div class="list_01_hover"></div>
+            </li>
+            <li>
+              <div class="list_01_div">List_01</div>
+              <div class="list_01_hover"></div>
+            </li>
           </ol>
           <ol class="tp_list list_02">
             <li>
@@ -219,7 +232,7 @@
             </li>
           </ol>
           <ol class="tp_list list_05">
-            <li class="on ani_end">
+            <li class="on">
               <h2>list_05</h2>
               <div>
                 <dl>
@@ -360,7 +373,7 @@
                 watchSlidesProgress: true,
               });
 
-              if (matchMedia("screen and (min-width: 1024px)").matches) {
+              if (matchMedia("screen and (min-width: 1280px)").matches) {
                 var swiper2 = new Swiper(".image_swiper", {
                   loop: true,
                   centeredSlides: true,
@@ -393,7 +406,7 @@
         </div>
         <div class="sub_banner_02">
           <div class="text_box">
-            <h4>Toob plus의 맞춤식 홈페이지 제작 서비스</h4>
+            <h4>Toob plus의 맞춤식 홈페이지 sub banner 02</h4>
             <h2>개성있는 홈페이지를 만들어보세요</h2>
             <div class="tp_btn tp_btn_02"><a href="#">VIEW MORE</a></div>
           </div>
@@ -402,7 +415,7 @@
           <div class="bg_area"></div>
           <div class="text_box">
             <h3>UI/UX를 고려하면서도 참신한 디자인</h3>
-            <h2>플러터 서비스</h2>
+            <h2>sub banner 03</h2>
           </div>
         </div>
         <div class="sub_banner_04"></div>
@@ -424,6 +437,13 @@
             <dd>3.서태웅</dd>
             <dd>4.정대만</dd>
           </dl>
+          <dl class="tp_table_line table_line_03">
+            <dt>특징</dt>
+            <dd>1.빨간머리</dd>
+            <dd>2.고릴라</dd>
+            <dd>3.똑똑이</dd>
+            <dd>4.선생님..</dd>
+          </dl>
         </div>
         <div class="tp_table table_02"></div>
       </section>
@@ -442,3 +462,5 @@
     </footer>
   </body>
 </html>
+
+<!-- Made By Haraho:곽대호 -->

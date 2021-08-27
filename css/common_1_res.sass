@@ -1,9 +1,11 @@
 // common_res.sass is about overall form of the entire document, header, footer
+// Made By Haraho:곽대호
   
 // Tablet Here (768px~)
 @media screen and ( min-width: 768px )
   header
     height: 100px
+
   .tp_header_logo, .tp_gnb, .modal_btn
     line-height: 100px
   .tp_header_logo a, .tp_gnb>li>a
@@ -12,7 +14,10 @@
 
 
 // PC Here (1024px~)
-@media screen and ( min-width: 1024px )
+@media screen and ( min-width: 1280px )
+  header
+    div.wrap
+      justify-content: space-between
   section
     min-height: 100vh
   nav

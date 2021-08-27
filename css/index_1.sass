@@ -1,3 +1,4 @@
+// Made By Haraho:곽대호
 
 html
   max-width: 1920px
@@ -10,17 +11,11 @@ html
   position: relative
 
 .sec01
-  height: 350px
-  background-color: #ccc
   padding: 0
-  .swiper-slide
-    display: flex
-  .tp_main_banner_swiper
-    width: 100%
-    height: 100%
   .banner_01
     z-index: -2
     position: relative
+    height: 350px
     padding-top: 100px
     background-color: #000
     color: #fff
@@ -36,6 +31,11 @@ html
       background-size: cover
       background-position: 20% 50%
       opacity: 0.3
+    .swiper-slide
+      display: flex
+    .tp_main_banner_swiper
+      width: 100%
+      height: 100%
     .banner_01_image
       width: 28vw
       height: 21vw
@@ -62,10 +62,25 @@ html
     justify-content: space-between
     flex-wrap: wrap
     li
+      position: relative
       height: 160px
       width: 40%
       background-color: #fff
       margin: 5% 5%
+      div
+        width: 100%
+        height: 100%
+      .list_01_hover
+        position: absolute
+        left: 0
+        top: 0
+        display: none
+        background-color: rgba(0,0,0,0.3)
+        color: #fff
+      &:hover
+        .list_01_hover
+          display: block
+        
 
   .list_02
     h2
@@ -135,7 +150,10 @@ html
       h2
         display: inline-block
         font-size: 1.2em
+        opacity: 0.3
         transition: 0.5s
+        &:hover
+          cursor: pointer
       div
         position: absolute
         left: 0
@@ -146,9 +164,9 @@ html
       dt
         font-size: 1.2em
     .on
+      opacity: 1.0
       h2
-        font-size: 1.5em
-        border-bottom: 1px solid #000
+        opacity: 1.0
       div
         display: block
   .list_06
@@ -197,8 +215,8 @@ html
     .image_swiper
       width: 50%
       height: 50vw
-      // margin: 0
       margin-right: auto
+      overflow: visible
       .swiper-slide
         background-color: #ccc
       .swiper-button-next,.swiper-button-prev
@@ -217,10 +235,11 @@ html
         left: 25%
         padding-right: 8px
       .swiper-button-next
-        right: 25%
+        right: -75%
         padding-left: 8px
         
     .textbox_swiper
+      z-index: 1
       position: absolute
       right: 0
       width: 50%
@@ -246,11 +265,11 @@ html
           color: #ccc
           background-color: #000
   .sub_banner_03
-    z-index: -2
+    z-index: -4
     margin-top: 50px
-    height: 400px
+    height: 150px
     .bg_area
-      z-index: -1
+      z-index: -3
       position: fixed
       left: 0
       bottom: 0
@@ -268,22 +287,25 @@ html
 .sec04
   background-color: #ca9
   height: 100vh
-  .tp_table
+  .table_01
     width: 80%
     display: flex
     margin: auto
     dl
       width: 50%
       line-height: 2
-      &:first-child
-        border-right: 1px solid #000
+      border-left: 1px solid #000
       *
         border-top: 1px solid #000
         background-color: #ccc
+      &:first-of-type
+        *
+          font-weight: 700
+          background-color: #aaa
+      &:first-child
+        border-left-width: 0
       dt
         border-top: 0
-
-  .table_01
 
 
 .sec05
