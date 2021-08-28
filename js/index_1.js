@@ -1,3 +1,4 @@
+// Made By Haraho:곽대호
 $(function () {
   // list_01
   function list_01_copy() {
