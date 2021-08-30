@@ -35,4 +35,17 @@ $(function () {
     }
   }
   h2ToDtCopy();
+
+  // list_06
+  function list_06_copy() {
+    const list06_num = $(".list_06 li").length;
+    let list06_div = document.querySelectorAll(`.list_06_div`);
+    console.log(list06_div);
+    let list06_hover = document.querySelectorAll(`.list_06_hover`);
+    for (let i = 0; i < list06_num; i++) {
+      let div_html = list06_div[i].innerHTML;
+      list06_hover[i].innerHTML = div_html;
+    }
+  }
+  list_06_copy();
 });
