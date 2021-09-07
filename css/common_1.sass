@@ -66,11 +66,36 @@ h1
       display: block
       color :#fff
 .tp_btn
-      a
-        display: block
-        width: 150px
-        padding: 5px 10px
-        margin: 20px auto 0
-        text-align: center
-        font-size: 0.8em
+  a
+    display: block
+    width: 150px
+    padding: 5px 10px
+    margin: 20px auto 0
+    text-align: center
+    font-size: 0.8em
+    transition: 0.5s
+.gnb_down
+  li
+    position: relative
+    &:hover
+      ol
+        top: 100%
+        li
+          opacity: 1
+          height: 50px
+    ol
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      overflow: hidden
+      transition: 0.5s
+      li
+        height: 0
+        line-height: 50px
+        opacity: 0
         transition: 0.5s
+  
+    
+    
+  

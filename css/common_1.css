@@ -113,4 +113,35 @@ h1 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
+.gnb_down li {
+  position: relative;
+}
+
+.gnb_down li:hover ol {
+  top: 100%;
+}
+
+.gnb_down li:hover ol li {
+  opacity: 1;
+  height: 50px;
+}
+
+.gnb_down li ol {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gnb_down li ol li {
+  height: 0;
+  line-height: 50px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 /*# sourceMappingURL=common_1.css.map */
