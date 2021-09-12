@@ -41,7 +41,7 @@ html
     height: 21vw
     max-width: 880px
     max-height: 660px
-    background-image: url(../images/bg_image_02.jpg)
+    background-image: url(../images/background/bg_image_02.jpg)
   h1
     font-size: 3em
   .tp_btn_01
@@ -127,6 +127,7 @@ html
     margin-bottom: 20px
     line-height: 120px
     background-color: #fff
+    transition: 0.3s
 .list_04
   li
     text-align: left
@@ -220,7 +221,13 @@ html
     justify-content: center
     width: 50%
     height: 50%
+    border: 1px solid #000
     background-color: #ccc
+    transition: 0.5s
+    opacity: 1
+    &:hover
+      z-index: 1
+      opacity: 0.6
     &:nth-of-type(1), &:nth-of-type(4)
       background-color: #666
       color: #fff
