@@ -556,12 +556,12 @@ html {
 
 /* Scroll Animation (sa, 스크롤 애니메이션) */
 .sa {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   background-color: #fff;
   opacity: 0;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 /* 아래에서 위로 페이드 인 */

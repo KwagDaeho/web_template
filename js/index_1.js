@@ -49,7 +49,7 @@ $(function () {
   list_06_copy();
 
   // Scroll Animation (sa, 스크롤 애니메이션)
-  const saTriggerMargin = 300;
+  const saTriggerMargin = 150;
   const saElementList = document.querySelectorAll(".sa");
 
   const saFunc = function () {
@@ -64,7 +64,6 @@ $(function () {
       }
     }
   };
-
   window.addEventListener("load", saFunc);
   window.addEventListener("scroll", saFunc);
 });
