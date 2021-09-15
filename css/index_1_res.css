@@ -78,10 +78,6 @@
   .list_06 li:nth-of-type(7) {
     border-bottom-width: 1px;
   }
-  .sa {
-    width: 240px;
-    height: 240px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
