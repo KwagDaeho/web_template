@@ -15,9 +15,12 @@ $(function () {
   copyHtmlByClass(".list_05_h2", ".list_05_dt");
   copyHtmlByClass(".hover_turn_defalut", ".hover_turn_hover");
 
+  addAloneClass = (target, className) => {
+    $(target).click(function () {
+      $(this).addClass(className);
+      $(this).siblings().removeClass(className);
+    });
+  };
+  addAloneClass(".list_05 li", "on");
   // list_05
-  $(".list_05 li").click(function () {
-    $(this).addClass("on");
-    $(this).siblings().removeClass("on");
-  });
 });
