@@ -87,4 +87,7 @@ th {
   .tp_on_pc {
     display: inherit;
   }
+  .tp_on_mo {
+    display: none;
+  }
 }
