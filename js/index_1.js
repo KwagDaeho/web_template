@@ -1,6 +1,6 @@
 // Made By Haraho:곽대호
 $(function () {
-  function copyHtmlByClass(from, to) {
+  copyHtmlByClass = (from, to) => {
     let copyFrom = document.querySelectorAll(from);
     let copyTo = document.querySelectorAll(to);
     from = from.replace(".", "");
@@ -10,17 +10,22 @@ $(function () {
       let fromHtml = copyFrom[i].innerHTML;
       copyTo[i].innerHTML = fromHtml;
     }
-  }
+  };
   copyHtmlByClass(".list_01_div", ".list_01_hover");
   copyHtmlByClass(".list_05_h2", ".list_05_dt");
   copyHtmlByClass(".hover_turn_defalut", ".hover_turn_hover");
 
   addAloneClass = (target, className) => {
-    $(target).click(function () {
+    $(target).click(() => {
       $(this).addClass(className);
       $(this).siblings().removeClass(className);
     });
   };
   addAloneClass(".list_05 li", "on");
-  // list_05
+
+  toggleClass = (target, className) => {
+    $(target).click(() => {
+      $(this).toggleClass(className);
+    });
+  };
 });
