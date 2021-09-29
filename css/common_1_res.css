@@ -2,6 +2,10 @@
   header {
     height: 100px;
   }
+  .modal_btn {
+    padding-top: 10px;
+    height: 100px;
+  }
   .tp_header_logo, .tp_gnb, .modal_btn {
     line-height: 100px;
   }

@@ -32,4 +32,14 @@ $(function () {
       $(this).css(css, to);
     });
   };
+
+  // modal_btn
+  function updateMenuButton() {
+    $(".menu-icon").toggleClass("is-active");
+    console.log("asd");
+  }
+  $(".menu-button").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("is-active");
+  });
 });
