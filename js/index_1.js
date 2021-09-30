@@ -16,7 +16,7 @@ $(function () {
   copyHtmlByClass(".hover_turn_defalut", ".hover_turn_hover");
 
   addAloneClass = (target, className) => {
-    $(target).click(() => {
+    $(target).click(function () {
       $(this).addClass(className);
       $(this).siblings().removeClass(className);
     });
@@ -24,7 +24,7 @@ $(function () {
   addAloneClass(".list_05 li", "on");
 
   toggleClass = (target, className) => {
-    $(target).click(() => {
+    $(target).click(function () {
       $(this).toggleClass(className);
     });
   };

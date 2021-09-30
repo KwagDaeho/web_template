@@ -18,16 +18,16 @@ $(function () {
   window.addEventListener("scroll", saFunc);
 
   hoverCssChanger = (target, css, from, to) => {
-    $(target).mouseenter(() => {
-      $(this).css(css, from);
-    });
-    $(target).mouseleave(() => {
+    $(target).mouseenter(function () {
       $(this).css(css, to);
     });
+    $(target).mouseleave(function () {
+      $(this).css(css, from);
+    });
   };
-  hoverCssChanger(".hover_scale_up", "transform", "scale(1.2)", "scale(1.0)");
+  hoverCssChanger(".hover_scale_up", "transform", "scale(1.0)", "scale(1.2)");
 
-  clickCssChanger = (target, css, from, to) => {
+  clickCssChanger = function (target, css, to) {
     $(target).click(() => {
       $(this).css(css, to);
     });
