@@ -62,23 +62,19 @@ $menu-icon-color--active: #ccc
 	transform: rotate(0deg)
 	transform-origin: 50% 50%
 	will-change: transform, opacity
-
+.menu-button
+  width: 40px
+  height: 40px
 .menu-button:hover path,
 .menu-button:active path 
   stroke: $menu-icon-color--active
 
 .menu-button.is-active path:nth-child(1) 
 	opacity: 0
-
-
 .menu-button.is-active path:nth-child(4) 
 	opacity: 0
-
-
 .menu-button.is-active path:nth-child(2) 
     transform: rotate(45deg)
-
-
 .menu-button.is-active path:nth-child(3) 
 	transform: rotate(-45deg)
 
@@ -118,17 +114,19 @@ $menu-icon-color--active: #ccc
     position: relative
     &:hover
       ol
-        top: 100%
+        opacity: 1
         li
           opacity: 1
           height: 50px
     ol
       position: absolute
-      top: 0
+      top: 100%
       left: 0
       width: 100%
+      background-color: rgba(0,0,0,0.4)
       overflow: hidden
       transition: 0.5s
+      opacity: 0
       li
         height: 0
         line-height: 50px

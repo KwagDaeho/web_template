@@ -1,0 +1,47 @@
+.hover_bd {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 5px solid #fff;
+}
+
+.hover_bd:hover {
+  border-color: #000;
+}
+
+.hover_bd * {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover_inverse {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover_inverse:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.hover_gray {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover_gray:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.hover_shadow {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover_shadow:hover {
+  -webkit-filter: drop-shadow(5px 5px 3px #000);
+          filter: drop-shadow(5px 5px 3px #000);
+}
+/*# sourceMappingURL=ani_hover.css.map */

@@ -88,6 +88,11 @@ h1 {
   will-change: transform, opacity;
 }
 
+.menu-button {
+  width: 40px;
+  height: 40px;
+}
+
 .menu-button:hover path,
 .menu-button:active path {
   stroke: #ccc;
@@ -161,7 +166,7 @@ h1 {
 }
 
 .gnb_down li:hover ol {
-  top: 100%;
+  opacity: 1;
 }
 
 .gnb_down li:hover ol li {
@@ -171,12 +176,14 @@ h1 {
 
 .gnb_down li ol {
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  opacity: 0;
 }
 
 .gnb_down li ol li {
