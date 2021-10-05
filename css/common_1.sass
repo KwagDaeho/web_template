@@ -24,6 +24,8 @@ header
   .tp_header_logo
     width: 100px
     display: inline-block
+  &:hover
+    border-bottom: 1px solid #fff
     
 section
   width: 100%
@@ -35,7 +37,7 @@ h1
   font-size: 2em
 .tp_gnb
   display: flex
-  justify-content: space-between
+  justify-content: center
 .modal_btn
   z-index: 11
   position: absolute
@@ -112,6 +114,7 @@ $menu-icon-color--active: #ccc
 .gnb_down
   li
     position: relative
+    min-width: 160px
     &:hover
       ol
         opacity: 1
@@ -120,9 +123,10 @@ $menu-icon-color--active: #ccc
           height: 50px
     ol
       position: absolute
-      top: 100%
+      top: calc(100% - 1px)
       left: 0
       width: 100%
+      border: 3px double #fff
       background-color: rgba(0,0,0,0.4)
       overflow: hidden
       transition: 0.5s
@@ -132,7 +136,25 @@ $menu-icon-color--active: #ccc
         line-height: 50px
         opacity: 0
         transition: 0.5s
-  
-    
-    
-  
+.footer_1
+  padding: 50px 5%
+  background-color: #222
+  color: #fff
+  .tp_footer_btns
+    display: flex
+    justify-content: center
+    gap: 20px
+    border-bottom: 1px solid #ccc
+    padding-bottom: 20px
+  .tp_info
+    padding-top: 20px
+    dt
+      &:first-of-type
+        display: inline-block
+    dd
+      &:first-of-type
+        display: inline-block
+      &:last-of-type
+        margin: 40px 0
+  .tp_tel_num
+    font-size: 2em

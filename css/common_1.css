@@ -37,6 +37,10 @@ header .tp_header_logo {
   display: inline-block;
 }
 
+header:hover {
+  border-bottom: 1px solid #fff;
+}
+
 section {
   width: 100%;
   padding: 5vh 0;
@@ -55,9 +59,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal_btn {
@@ -163,6 +167,7 @@ h1 {
 
 .gnb_down li {
   position: relative;
+  min-width: 160px;
 }
 
 .gnb_down li:hover ol {
@@ -176,9 +181,10 @@ h1 {
 
 .gnb_down li ol {
   position: absolute;
-  top: 100%;
+  top: calc(100% - 1px);
   left: 0;
   width: 100%;
+  border: 3px double #fff;
   background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   -webkit-transition: 0.5s;
@@ -192,5 +198,43 @@ h1 {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.footer_1 {
+  padding: 50px 5%;
+  background-color: #222;
+  color: #fff;
+}
+
+.footer_1 .tp_footer_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.footer_1 .tp_info {
+  padding-top: 20px;
+}
+
+.footer_1 .tp_info dt:first-of-type {
+  display: inline-block;
+}
+
+.footer_1 .tp_info dd:first-of-type {
+  display: inline-block;
+}
+
+.footer_1 .tp_info dd:last-of-type {
+  margin: 40px 0;
+}
+
+.footer_1 .tp_tel_num {
+  font-size: 2em;
 }
 /*# sourceMappingURL=common_1.css.map */

@@ -75,6 +75,10 @@
     width: 50%;
     border-left-width: 0;
   }
+  .sec05 > div.animation_group {
+    width: 80%;
+    gap: 50px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -146,10 +150,7 @@
     height: 30vw;
   }
   .sub_banner_01 .textbox_swiper .swiper-slide {
-    padding: 50px 150px;
-  }
-  .sub_banner_01 .textbox_swiper .swiper-slide h2 {
-    text-indent: -7px;
+    padding: 50px 20px 50px 150px;
   }
   .sub_banner_02 .text_box {
     position: relative;

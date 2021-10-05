@@ -1,9 +1,13 @@
 
   /* Scroll Animation (sa, 스크롤 애니메이션) */
 .sa
+  display: flex
+  justify-content: center
+  align-items: center
   width: 140px
   height: 140px
   background-color: #fff
+  border: 1px solid #000
   opacity: 0
   transition: all 1s ease
 .sa.show 
@@ -35,6 +39,8 @@
   transform: scale(1.5)
 .hover_scale_up
   transition: 0.3s
+  >*
+    transition: 0.3s
 .hover_turn
   perspective: 2000
   >div
@@ -68,7 +74,38 @@
       .hover_turn_hover
         h2
           text-decoration: underline
+.toggle_bgc
+  animation: toggle_bgc 2s infinite
+.toggle_bgc_before
+  &::before
+    animation: toggle_bgc 2s infinite
+.toggle_bgc_after
+  &::after
+    animation: toggle_bgc 2s infinite
+.hover_toggle_bgc
+  &:hover
+    animation: toggle_bgc 2s infinite
+.hover_toggle_bgc_before
+  &:hover
+    &::before
+      animation: toggle_bgc 2s infinite
+.hover_toggle_bgc_after
+  &:hover
+    &::after
+      animation: toggle_bgc 2s infinite
+@keyframes toggle_bgc
+  0%
+    background-color: rgba(255,255,255,0.6)
+  50%
+    background-color: rgba(0,0,0,0.2)
+  100%
+    background-color: rgba(255,255,255,0.6)
 @media all and (min-width:768px)
   .sa
     width: 240px
     height: 240px
+
+@media all and (min-width:1280px)
+  .sa
+    width: 300px
+    height: 300px

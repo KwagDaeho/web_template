@@ -19,10 +19,10 @@ $(function () {
 
   hoverCssChanger = (target, css, from, to) => {
     $(target).mouseenter(function () {
-      $(this).css(css, to);
+      $(this).children("*").css(css, to);
     });
     $(target).mouseleave(function () {
-      $(this).css(css, from);
+      $(this).children("*").css(css, from);
     });
   };
   hoverCssChanger(".hover_scale_up", "transform", "scale(1.0)", "scale(1.2)");

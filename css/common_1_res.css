@@ -37,8 +37,19 @@
   .modal_btn {
     position: inherit;
   }
-  .tp_on_pc {
-    display: block;
+  .footer_1 {
+    text-align: left;
+  }
+  .footer_1 .tp_footer_btns {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer_1 .tp_footer_btns li {
+    padding: 10px 30px 0 0;
+  }
+  .footer_1 .tp_info {
+    padding-top: 30px;
   }
 }
 /*# sourceMappingURL=common_1_res.css.map */
