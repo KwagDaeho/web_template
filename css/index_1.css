@@ -548,7 +548,6 @@ html {
 
 .sec04 {
   background-color: #fff;
-  height: 100vh;
 }
 
 .table_01 {
@@ -607,7 +606,11 @@ html {
   margin-bottom: 100px;
 }
 
-.sec05 .hover_gray {
+.sec05 > div.animation_group .hover_gray, .sec05 > div.animation_group .hover_inverse {
   background-color: #f90;
+}
+
+.sec05 > div.animation_group .hover_bd, .sec05 > div.animation_group .hover_bd_move, .sec05 > div.animation_group .hover_bd_move_order, .sec05 > div.animation_group .hover_bdb_move, .sec05 > div.animation_group .hover_bdb_move_over {
+  background-color: #eee;
 }
 /*# sourceMappingURL=index_1.css.map */
