@@ -14,6 +14,7 @@ $(function () {
   copyHtmlByClass(".list_01_div", ".list_01_hover");
   copyHtmlByClass(".list_05_h2", ".list_05_dt");
   copyHtmlByClass(".hover_turn_defalut", ".hover_turn_hover");
+  copyHtmlByClass(".tp_gnb", ".tp_modal_gnb");
 
   addAloneClass = (target, className) => {
     $(target).click(function () {
@@ -21,8 +22,14 @@ $(function () {
       $(this).siblings().removeClass(className);
     });
   };
+  toggleAloneClass = (target, className) => {
+    $(target).click(function () {
+      $(this).toggleClass(className);
+      $(this).siblings().removeClass(className);
+    });
+  };
   addAloneClass(".list_05 li", "on");
-
+  toggleAloneClass(".tp_modal_gnb li", "on");
   toggleClass = (target, className) => {
     $(target).click(function () {
       $(this).toggleClass(className);

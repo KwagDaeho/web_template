@@ -25,7 +25,7 @@ $(function () {
       $(this).children("*").css(css, from);
     });
   };
-  hoverCssChanger(".hover_scale_up", "transform", "scale(1.0)", "scale(1.2)");
+  hoverCssChanger(".hover_scale_up", "transform", "scale(1.0)", "scale(1.15)");
 
   clickCssChanger = function (target, css, to) {
     $(target).click(() => {

@@ -36,7 +36,7 @@ html {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url(../images/background/bg_image_02.jpg);
+  background-image: url(../images/bg/bg_image_02.jpg);
   background-size: cover;
   background-position: 20% 50%;
   opacity: 0.3;
@@ -58,7 +58,7 @@ html {
   height: 21vw;
   max-width: 880px;
   max-height: 660px;
-  background-image: url(../images/background/bg_image_02.jpg);
+  background-image: url(../images/bg/bg_image_02.jpg);
 }
 
 .banner_01 h1 {
@@ -95,10 +95,10 @@ html {
 
 .list_01 li {
   position: relative;
-  height: 160px;
   width: 40%;
+  height: 37.6vw;
   background-color: #e1e1e1;
-  margin: 5% 5%;
+  margin: 5%;
 }
 
 .list_01 li div {
@@ -287,7 +287,7 @@ html {
 .list_05 li {
   width: 25%;
   height: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   text-align: center;
   line-height: 30px;
 }
@@ -312,6 +312,12 @@ html {
   display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.list_05 li dd {
+  max-height: 150px;
+  overflow: scroll;
+  padding: 0 5%;
 }
 
 .list_05 li dt {
@@ -358,6 +364,19 @@ html {
 }
 
 .list_07 li {
+  width: 50%;
+  height: 50%;
+  border: 1px solid #000;
+  background-color: #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.list_07 li > div {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,28 +386,54 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
-  height: 50%;
-  border: 1px solid #000;
-  background-color: #ccc;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 1;
+}
+
+.list_07 li:first-of-type > div {
+  background-image: url(../images/bg/bg_image_02.jpg);
 }
 
 .list_07 li:hover {
   z-index: 1;
+}
+
+.list_07 li:hover > div {
   opacity: 0.6;
 }
 
 .list_07 li:nth-of-type(1), .list_07 li:nth-of-type(4) {
-  background-color: #666;
+  background-color: #333;
   color: #fff;
 }
 
 .list_08 h2 {
   font-size: 2em;
   line-height: 2em;
+}
+
+.list_09 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list_09 li {
+  width: 80%;
+  height: 100%;
+  margin-bottom: 20px;
+  background-image: url(../images/bg/bg_01.jpg);
+}
+
+.list_09 li > div {
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sec03 {
@@ -428,6 +473,12 @@ html {
 }
 
 .sub_banner_01 .image_swiper .swiper-slide {
+  background-image: url(../images/bg/bg_01.jpg);
+}
+
+.sub_banner_01 .image_swiper .swiper-slide .slide_inner {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,8 +488,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f90;
-  opacity: 0.5;
 }
 
 .sub_banner_01 .image_swiper .swiper-slide.swiper-slide-active {
@@ -530,7 +579,7 @@ html {
   bottom: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(../images/background/bg_image_03.jpg);
+  background-image: url(../images/bg/bg_image_03.jpg);
   opacity: 0.5;
 }
 

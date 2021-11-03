@@ -29,16 +29,16 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <!-- 위 태그 : 제이쿼리 CDN -->
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/common_1.css" />
-    <link rel="stylesheet" href="css/common_1_res.css" />
-    <link rel="stylesheet" href="css/index_1.css" />
-    <link rel="stylesheet" href="css/index_1_res.css" />
-    <link rel="stylesheet" href="css/ani.css" />
-    <link rel="stylesheet" href="css/ani_hover.css" />
-    <script src="js/common.js"></script>
-    <script src="js/index_1.js"></script>
-    <script src="js/ani.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common_1.css" />
+    <link rel="stylesheet" href="./css/common_1_res.css" />
+    <link rel="stylesheet" href="./css/index_1.css" />
+    <link rel="stylesheet" href="./css/index_1_res.css" />
+    <link rel="stylesheet" href="./css/ani.css" />
+    <link rel="stylesheet" href="./css/ani_hover.css" />
+    <script src="./js/common.js"></script>
+    <script src="./js/index_1.js"></script>
+    <script src="./js/ani.js"></script>
   </head>
 
   <body>
@@ -58,17 +58,18 @@
             <li>
               <a href="#">menu2</a>
               <ol>
-                <li>dep2_1</li>
-                <li>dep2_2</li>
-                <li>dep2_3</li>
+                <li><a href="#none">dep2_1</a></li>
+                <li><a href="#none">dep2_2</a></li>
+                <li><a href="#none">dep2_3</a></li>
+                <li><a href="#none">dep2_4</a></li>
+                <li><a href="#none">dep2_5</a></li>
               </ol>
             </li>
             <li>
               <a href="#">menu3</a>
               <ol>
-                <li>dep2_1</li>
-                <li>dep2_2</li>
-                <li>dep2_3</li>
+                <li><a href="#none">dep2_1</a></li>
+                <li><a href="#none">dep2_2</a></li>
               </ol>
             </li>
           </ol>
@@ -119,73 +120,69 @@
             </svg>
           </div>
           <h2 class="hover_menu_text tp_on_pc">left hover menu</h2>
-          <ol class="tp_modal_gnb">
-            <li><a href="#">menu1</a></li>
-            <li><a href="#">menu2</a></li>
-            <li><a href="#">menu3</a></li>
-            <li class="burger_list">
-              <div class="hamburger" id="hamburger-1">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-2">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-3">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-4">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-5">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-6">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-7">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-8">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-9">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-10">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-11">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="hamburger" id="hamburger-12">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-            </li>
-          </ol>
+          <ol class="tp_modal_gnb"></ol>
+          <div class="burger_list">
+            <div class="hamburger" id="hamburger-1">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-2">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-3">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-4">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-5">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-6">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-7">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-8">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-9">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-10">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-11">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="hamburger" id="hamburger-12">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -367,7 +364,38 @@
             <div>
               <dl>
                 <dt class="list_05_dt"></dt>
-                <dd>다양한 디자인들 중에서 마음에 드는 디자인을 찾아보세요!</dd>
+                <dd>
+                  다양한 디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!다양한
+                  디자인들 중에서 마음에 드는 디자인을 찾아보세요!
+                </dd>
               </dl>
             </div>
           </li>
@@ -472,10 +500,18 @@
         </li>
       </ol>
       <ol class="tp_list list_07">
-        <li class="hover_scale_up"><h2>list_07</h2></li>
-        <li class="hover_scale_up"><h2>list_07</h2></li>
-        <li class="hover_scale_up"><h2>list_07</h2></li>
-        <li class="hover_scale_up"><h2>list_07</h2></li>
+        <li class="hover_scale_up">
+          <div><h2>list_07</h2></div>
+        </li>
+        <li class="hover_scale_up">
+          <div><h2>list_07</h2></div>
+        </li>
+        <li class="hover_scale_up">
+          <div><h2>list_07</h2></div>
+        </li>
+        <li class="hover_scale_up">
+          <div><h2>list_07</h2></div>
+        </li>
       </ol>
       <ol class="tp_list list_08">
         <li class="hover_scale_up"><h2>list_08</h2></li>
@@ -483,6 +519,46 @@
         <li class="hover_scale_up"><h2>list_08</h2></li>
         <li class="hover_scale_up"><h2>list_08</h2></li>
       </ol>
+      <div class="wrap">
+        <ol class="tp_list list_09">
+          <li class="size_2 hover_square_zoom">
+            <div>
+              <p>SPECIAL TOOB PLUS</p>
+              <h2>우리만의 경쟁력</h2>
+            </div>
+          </li>
+          <li class="size_1 hover_square_zoom_2">
+            <div>
+              <p>SPECIAL TOOB</p>
+              <h2>다양한 디자인</h2>
+            </div>
+          </li>
+          <li class="size_1 hover_square_zoom">
+            <div>
+              <p>SPECIAL TOOB</p>
+              <h2>정확한 작업</h2>
+            </div>
+          </li>
+          <li class="size_1 hover_square_zoom">
+            <div>
+              <p>SPECIAL TOOB</p>
+              <h2>빠른 속도</h2>
+            </div>
+          </li>
+          <li class="size_1 hover_square_zoom">
+            <div>
+              <p>SPECIAL TOOB</p>
+              <h2>홈페이지 제작</h2>
+            </div>
+          </li>
+          <li class="size_3 hover_square_zoom_2">
+            <div>
+              <p>SPECIAL TOOB</p>
+              <h2>투브 플러스</h2>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
     <!-- sec02 End -->
     <section class="sec03" id="sec03">
@@ -492,12 +568,28 @@
           <div class="image_wrap">
             <div class="swiper-container image_swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide hover_gray">Sub banner 01</div>
-                <div class="swiper-slide hover_gray">
-                  여러가지 배너들도 확인해보세요.
+                <div class="swiper-slide hover_square_zoom">
+                  <div>
+                    <div class="slide_inner">Sub banner 01</div>
+                  </div>
                 </div>
-                <div class="swiper-slide hover_gray">3</div>
-                <div class="swiper-slide hover_gray">swiper 슬라이더</div>
+                <div class="swiper-slide hover_square_zoom">
+                  <div>
+                    <div class="slide_inner">
+                      여러가지 배너들도 확인해보세요.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide hover_square_zoom">
+                  <div>
+                    <div class="slide_inner">다양한 애니메이션과 디자인</div>
+                  </div>
+                </div>
+                <div class="swiper-slide hover_square_zoom">
+                  <div>
+                    <div class="slide_inner">투브플러스 홈페이지</div>
+                  </div>
+                </div>
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -542,7 +634,7 @@
               watchSlidesProgress: true,
             });
 
-            if (matchMedia("screen and (min-width: 1280px)").matches) {
+            if (matchMedia("screen and (min-width: 768px)").matches) {
               var swiper2 = new Swiper(".image_swiper", {
                 loop: true,
                 centeredSlides: true,
@@ -674,6 +766,9 @@
             </div>
             <div class="hover_turn_hover"></div>
           </div>
+        </div>
+        <div class="sa hover_square_zoom">
+          <div>animation 20<br />- Mouse over -</div>
         </div>
       </div>
     </section>

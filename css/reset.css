@@ -64,7 +64,7 @@ th {
 }
 .wrap {
   width: 94%;
-  max-width: 1500px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -76,7 +76,7 @@ th {
 }
 @media all and (min-width: 768px) {
   .wrap {
-    width: 80%;
+    width: 70%;
   }
   body {
     font-size: 16px;
