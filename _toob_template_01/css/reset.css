@@ -75,17 +75,17 @@ th {
   display: none;
 }
 @media all and (min-width: 768px) {
-  .wrap {
-    width: 60%;
-  }
   body {
     font-size: 16px;
   }
 }
 :root {
-  --swiper-theme-color: #000;
+  --swiper-theme-color: #ccc;
 }
 @media all and (min-width: 1280px) {
+  .wrap {
+    width: 60%;
+  }
   .tp_on_pc {
     display: inherit;
   }

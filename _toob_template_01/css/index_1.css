@@ -62,7 +62,9 @@ html {
 }
 
 .banner_01 h1 {
-  font-size: 3em;
+  font-size: 2.2em;
+  line-height: 1.2em;
+  margin-bottom: 0.4em;
 }
 
 .banner_01 .tp_btn_01 a {
@@ -74,6 +76,10 @@ html {
   border-color: #000;
   color: #000;
   background-color: #fff;
+}
+
+.banner_01 h4 {
+  opacity: 0.7;
 }
 
 .sec02 {
@@ -425,15 +431,31 @@ html {
   width: 80%;
   height: 100%;
   margin-bottom: 20px;
+  border: 0;
+  background-color: #F1EAE3;
   background-image: url(../images/bg/bg_01.jpg);
 }
 
 .list_09 li > div {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.list_09 li h2 {
+  font-weight: 500;
+}
+
+.list_09 li:last-of-type {
+  background-image: url(../images/samsungu_index_01.png);
+  background-size: 150px;
+  background-position: 80% 50%;
+}
+
+.list_09 li:last-of-type:hover {
+  background-size: 190px;
 }
 
 .sec03 {
@@ -543,19 +565,25 @@ html {
 }
 
 .sub_banner_02 {
-  padding: 50px 10px;
-  background-color: #d2d2d2;
+  padding: 70px 10px;
+  background-color: #5c5c5c;
+  background-image: url(../images/bg/bg_image_03_bk.jpg);
+  color: #fff;
+}
+
+.sub_banner_02 * {
+  font-weight: 500;
 }
 
 .sub_banner_02 .tp_btn_02 a {
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .sub_banner_02 .tp_btn_02 a:hover {
-  border-color: #ccc;
-  color: #ccc;
-  background-color: #000;
+  border-color: #5c5c5c;
+  color: #5c5c5c;
+  background-color: #fff;
 }
 
 .sub_banner_03 {

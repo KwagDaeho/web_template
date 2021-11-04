@@ -43,7 +43,9 @@ html
     max-height: 660px
     background-image: url(../images/bg/bg_image_02.jpg)
   h1
-    font-size: 3em
+    font-size: 2.2em
+    line-height: 1.2em
+    margin-bottom: 0.4em
   .tp_btn_01
     a
       border: 1px solid #fff
@@ -52,6 +54,8 @@ html
         border-color: #000
         color: #000
         background-color: #fff
+  h4
+    opacity: 0.7
   
 
 .sec02
@@ -267,10 +271,20 @@ html
     width: 80%
     height: 100%
     margin-bottom: 20px
+    border: 0
+    background-color: #F1EAE3
     background-image: url(../images/bg/bg_01.jpg)
     >div
-      background-color: rgba(255,255,255,0.6)
+      background-color: rgba(255,255,255,0.2)
       flex-direction: column
+    h2
+      font-weight: 500
+    &:last-of-type
+      background-image: url(../images/samsungu_index_01.png)
+      background-size: 150px
+      background-position: 80% 50%
+      &:hover
+        background-size: 190px
     
 .sec03
   padding: 0
@@ -337,16 +351,20 @@ html
         margin-bottom: 5px
         text-indent: 0
 .sub_banner_02
-  padding: 50px 10px
-  background-color: #d2d2d2
+  padding: 70px 10px
+  background-color: #5c5c5c
+  background-image: url(../images/bg/bg_image_03_bk.jpg)
+  color: #fff
+  *
+    font-weight: 500
   .tp_btn_02
     a
-      border: 1px solid #000
-      color: #000
+      border: 1px solid #fff
+      color: #fff
       &:hover
-        border-color: #ccc
-        color: #ccc
-        background-color: #000
+        border-color: #5c5c5c
+        color: #5c5c5c
+        background-color: #fff
 .sub_banner_03
   z-index: -4
   display: flex

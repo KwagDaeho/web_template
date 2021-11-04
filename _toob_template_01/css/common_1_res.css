@@ -16,7 +16,8 @@
 
 @media screen and (min-width: 1280px) {
   header div.wrap {
-    width: 80%;
+    width: 90%;
+    max-width: inherit;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

@@ -6,7 +6,7 @@
     height: 500px;
   }
   .sec01 .wrap {
-    width: 80%;
+    width: 70%;
   }
   .main_banner_01 {
     height: 100%;
@@ -89,7 +89,7 @@
     margin-bottom: 5%;
   }
   .list_09 > li > div > h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   .list_09 .size_1 {
     width: 30%;
@@ -167,7 +167,7 @@
             justify-content: space-between;
   }
   .banner_01 h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
   .banner_01 .tp_btn_01 a {
     width: 200px;
@@ -192,9 +192,8 @@
   .list_06 li:nth-of-type(5), .list_06 li:nth-of-type(6), .list_06 li:nth-of-type(7), .list_06 li:nth-of-type(8) {
     border-top-width: 0;
   }
-  .sub_banner_02 .text_box {
-    position: relative;
-    left: -15vw;
+  .sub_banner_02 {
+    padding: 100px 10px;
   }
   .sub_banner_03 {
     height: 400px;

@@ -208,8 +208,6 @@
   position: relative;
   background-size: 100%;
   overflow: hidden;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .hover_square_zoom > div {
@@ -245,8 +243,9 @@
   width: 90%;
   height: 90%;
   margin: 5%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(200, 170, 120, 0.5);
   color: #fff;
+  opacity: 1;
 }
 
 .hover_square_zoom_2 {

@@ -258,8 +258,9 @@ h1 {
 
 .footer_1 {
   padding: 50px 5%;
-  background-color: #222;
-  color: #fff;
+  background-color: #f7f7f7;
+  color: #000;
+  font-weight: 300;
 }
 
 .footer_1 .tp_footer_btns {
