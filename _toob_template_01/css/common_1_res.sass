@@ -10,9 +10,14 @@
     height: 80px
   .tp_header_logo, .tp_gnb
     line-height: 80px
-  .tp_header_logo a, .tp_gnb>li>a
-    padding: 0 10px
-  
+  .modal_window
+    >h1
+      padding-top: 130px
+      padding-left: 20px
+    .tp_modal_gnb
+      padding-top: 100px
+      >li
+        padding-left: 0
 
 
 // PC Here (1280px~)
@@ -43,3 +48,26 @@
         padding: 10px 30px 0 0
     .tp_info
       padding-top: 30px
+  .modal_window
+    width: 100%
+    .tp_modal_gnb
+      display: flex
+      justify-content: space-between
+      >li
+        width: 150px
+        border-bottom: 0
+        border-top: 1px solid #ccc
+        margin: 0 10px
+        padding: 20px 0 10px
+        >a
+          font-weight: 700
+        ol
+          li
+            height: inherit
+            opacity: 1
+            padding-bottom: 10px
+            a
+              font-size: 14px
+              font-weight: 300
+            &:first-of-type
+              height: inherit

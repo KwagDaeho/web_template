@@ -9,8 +9,15 @@
   .tp_header_logo, .tp_gnb {
     line-height: 80px;
   }
-  .tp_header_logo a, .tp_gnb > li > a {
-    padding: 0 10px;
+  .modal_window > h1 {
+    padding-top: 130px;
+    padding-left: 20px;
+  }
+  .modal_window .tp_modal_gnb {
+    padding-top: 100px;
+  }
+  .modal_window .tp_modal_gnb > li {
+    padding-left: 0;
   }
 }
 
@@ -52,6 +59,39 @@
   }
   .footer_1 .tp_info {
     padding-top: 30px;
+  }
+  .modal_window {
+    width: 100%;
+  }
+  .modal_window .tp_modal_gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .modal_window .tp_modal_gnb > li {
+    width: 150px;
+    border-bottom: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+    padding: 20px 0 10px;
+  }
+  .modal_window .tp_modal_gnb > li > a {
+    font-weight: 700;
+  }
+  .modal_window .tp_modal_gnb > li ol li {
+    height: inherit;
+    opacity: 1;
+    padding-bottom: 10px;
+  }
+  .modal_window .tp_modal_gnb > li ol li a {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .modal_window .tp_modal_gnb > li ol li:first-of-type {
+    height: inherit;
   }
 }
 /*# sourceMappingURL=common_1_res.css.map */

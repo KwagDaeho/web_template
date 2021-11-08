@@ -1,0 +1,110 @@
+
+  /* Scroll Animation (sa, 스크롤 애니메이션) */
+.sa
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 140px
+  height: 140px
+  background-color: #fff
+  border: 1px solid #000
+  opacity: 0
+  transition: all 1s ease
+.sa.show 
+  opacity: 1
+  transform: none
+/* 아래에서 위로 페이드 인 */
+.sa-up 
+  transform: translate(0, 100px)
+/* 위에서 아래로 페이드 인 */
+.sa-down 
+  transform: translate(0, -100px)
+/* 왼쪽에서 오른쪽으로 페이드 인 */
+.sa-right 
+  transform: translate(-100px, 0)
+/* 오른쪽에서 왼쪽으로 페이드 인 */
+.sa-left 
+  transform: translate(100px, 0)
+/* 왼쪽으로 회전하면서 페이드 인 */
+.sa-rotateL 
+  transform: rotate(180deg)
+/* 오른쪽으로 회전하면서 페이드 인 */
+.sa-rotateR 
+  transform: rotate(-180deg)
+/* 작아진 상태에서 커지면서 페이드 인 */
+.sa-scaleUp 
+  transform: scale(.5)
+/* 커진 상태에서 작아지면서 페이드 인 */
+.sa-scaleDown 
+  transform: scale(1.5)
+.hover_scale_up
+  transition: 0.3s
+  >*
+    transition: 0.3s
+.hover_turn
+  perspective: 2000
+  >div
+    width: 100%
+    height: 100%
+    position: relative
+    display: block
+    transform-style: preserve-3d
+    transition: 0.5s
+    >div
+      position: absolute
+      left: 0
+      top: 0
+      display: flex
+      flex-direction: column
+      justify-content: center
+      width: 100%
+      height: 100%
+      backface-visibility: hidden
+    &::before
+      z-index: -1
+      content: ''
+      display: block
+      width: 100%
+      padding-top: 100%
+    .hover_turn_hover
+      background-color: rgba(0,0,0,0.5)
+      color: #fff
+      transform: rotateY(180deg)
+  &:hover
+    >div
+      transform: rotateY(180deg)
+      .hover_turn_hover
+        h2
+          text-decoration: underline
+.toggle_bgc
+  animation: toggle_bgc 2s infinite
+.toggle_bgc_before
+  &::before
+    animation: toggle_bgc 2s infinite
+.toggle_bgc_after
+  &::after
+    animation: toggle_bgc 2s infinite
+.hover_toggle_bgc
+  &:hover
+    animation: toggle_bgc 2s infinite
+.hover_toggle_bgc_before
+  &:hover
+    &::before
+      animation: toggle_bgc 2s infinite
+.hover_toggle_bgc_after
+  &:hover
+    &::after
+      animation: toggle_bgc 2s infinite
+@keyframes toggle_bgc
+  0%
+    background-color: rgba(255,255,255,0.6)
+  50%
+    background-color: rgba(0,0,0,0.2)
+  100%
+    background-color: rgba(255,255,255,0.6)
+@media all and (min-width:768px)
+  .sa
+    width: 240px
+    height: 240px
+
+@media all and (min-width:1280px)

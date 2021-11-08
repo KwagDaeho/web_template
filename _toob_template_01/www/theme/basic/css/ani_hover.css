@@ -1,0 +1,206 @@
+.hover_bd {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 5px solid #fff;
+}
+
+.hover_bd:hover {
+  border-color: #000;
+}
+
+.hover_bd * {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover_inverse {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover_inverse:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.hover_gray {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover_gray:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.hover_shadow {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover_shadow:hover {
+  -webkit-filter: drop-shadow(5px 5px 3px #000);
+          filter: drop-shadow(5px 5px 3px #000);
+}
+
+.hover_bd_move {
+  position: relative;
+  border: 0;
+}
+
+.hover_bd_move span {
+  position: absolute;
+  background: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hover_bd_move span:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 5px;
+}
+
+.hover_bd_move span:nth-child(2) {
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 0;
+}
+
+.hover_bd_move span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+}
+
+.hover_bd_move span:nth-child(4) {
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+}
+
+.hover_bd_move:hover span:nth-child(1) {
+  width: 100%;
+}
+
+.hover_bd_move:hover span:nth-child(2) {
+  height: 100%;
+}
+
+.hover_bd_move:hover span:nth-child(3) {
+  width: 100%;
+}
+
+.hover_bd_move:hover span:nth-child(4) {
+  height: 100%;
+}
+
+.hover_bd_move_order {
+  position: relative;
+  border: 0;
+}
+
+.hover_bd_move_order span {
+  position: absolute;
+  background: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hover_bd_move_order span:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 5px;
+}
+
+.hover_bd_move_order span:nth-child(2) {
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 0;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.hover_bd_move_order span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.hover_bd_move_order span:nth-child(4) {
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.hover_bd_move_order:hover span:nth-child(1) {
+  width: 100%;
+}
+
+.hover_bd_move_order:hover span:nth-child(2) {
+  height: 100%;
+}
+
+.hover_bd_move_order:hover span:nth-child(3) {
+  width: 100%;
+}
+
+.hover_bd_move_order:hover span:nth-child(4) {
+  height: 100%;
+}
+
+.hover_bdb_move {
+  border: 0;
+  position: relative;
+}
+
+.hover_bdb_move span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hover_bdb_move:hover span {
+  width: 100%;
+}
+
+.hover_bdb_move_over {
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover_bdb_move_over span {
+  position: absolute;
+  left: -90%;
+  bottom: 0;
+  width: 90%;
+  height: 3px;
+  background: #000;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.hover_bdb_move_over:hover span {
+  left: 100%;
+}
+/*# sourceMappingURL=ani_hover.css.map */

@@ -1,0 +1,201 @@
+@media screen and (min-width: 768px) {
+  .tp_list {
+    margin-top: 50px;
+  }
+  .sec01 {
+    height: 500px;
+  }
+  .main_banner_01 {
+    height: 100%;
+  }
+  .banner_01 {
+    height: 100%;
+    padding-top: 150px;
+  }
+  .wrap {
+    height: 100%;
+  }
+  .list_01 li {
+    height: 28vw;
+    margin: 2%;
+  }
+  .list_02 li {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+  }
+  .list_02 li::before {
+    width: 30px;
+    height: 3px;
+  }
+  .list_03 li {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+  .list_05 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0;
+    border: 1px solid #000;
+    border-left: 0;
+    border-right: 0;
+  }
+  .list_05 li {
+    height: 60px;
+    margin: 0;
+  }
+  .list_05 li h2 {
+    padding: 0 20px;
+    line-height: 60px;
+  }
+  .list_05 li div {
+    width: 75%;
+    top: 0;
+    left: 25%;
+    text-align: left;
+  }
+  .list_05 li div dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 302px;
+  }
+  .list_05 li div dd {
+    padding-left: 0;
+  }
+  .list_06 li {
+    width: 50%;
+    border-left-width: 0;
+  }
+  .sec05 > div.animation_group {
+    width: 80%;
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .banner_01 {
+    text-align: left;
+    padding-top: 0;
+  }
+  .banner_01 .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .banner_01 h1 {
+    font-size: 4em;
+  }
+  .banner_01 .tp_btn_01 a {
+    width: 200px;
+    height: 60px;
+    line-height: 50px;
+    margin-left: 0;
+    font-size: 1em;
+  }
+  .list_01 li {
+    width: 20%;
+    height: 14vw;
+  }
+  .list_06 li {
+    width: 25%;
+  }
+  .list_06 li:nth-of-type(5), .list_06 li:nth-of-type(6) {
+    border-bottom-width: 1px;
+  }
+  .list_06 li:nth-of-type(1), .list_06 li:nth-of-type(5) {
+    border-left: 1px solid #000;
+  }
+  .list_06 li:nth-of-type(5), .list_06 li:nth-of-type(6), .list_06 li:nth-of-type(7), .list_06 li:nth-of-type(8) {
+    border-top-width: 0;
+  }
+  .sub_banner_01 .swiper_image_textbox div.image_wrap {
+    width: calc(60vw + 100px);
+    height: calc(30vw + 150px);
+  }
+  .sub_banner_01 .image_swiper {
+    width: calc(90vw + 200px);
+    height: 30vw;
+    overflow: visible;
+  }
+  .sub_banner_01 .image_swiper .swiper-button-next, .sub_banner_01 .image_swiper .swiper-button-prev {
+    bottom: -100px;
+  }
+  .sub_banner_01 .image_swiper .swiper-button-prev {
+    left: 37vw;
+    padding-right: 8px;
+  }
+  .sub_banner_01 .image_swiper .swiper-button-next {
+    right: 55vw;
+    padding-left: 8px;
+  }
+  .sub_banner_01 .textbox_swiper {
+    z-index: 0;
+    width: 40%;
+    right: 0;
+    bottom: 0;
+    height: 30vw;
+  }
+  .sub_banner_01 .textbox_swiper .swiper-slide {
+    padding: 50px 20px 50px 150px;
+  }
+  .sub_banner_02 .text_box {
+    position: relative;
+    left: -15vw;
+  }
+  .sub_banner_03 {
+    height: 400px;
+  }
+  .table_01 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .table_01 dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-left: 0;
+  }
+  .table_01 dl * {
+    width: 20%;
+    border-top: 0 solid #000;
+    border-left: 1px solid #000;
+  }
+  .table_01 dl:first-of-type {
+    border-top: 0;
+  }
+  .table_01 dl dt {
+    border-left-width: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .banner_01 .text_box {
+    padding-left: 10%;
+  }
+  .banner_01 .banner_01_image {
+    width: 36vw;
+    height: 27vw;
+  }
+}
+/*# sourceMappingURL=index_1_res.css.map */

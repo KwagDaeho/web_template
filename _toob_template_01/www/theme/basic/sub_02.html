@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .pc {
+      display: none;
+    }
+    div {
+      width: 100%;
+    }
+    div img {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1280px){
+      .pc {
+        display: block;
+      }
+      .mo {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="pc"><img src="/theme/basic/img/image-03.jpg" alt=""></div>
+  <div class="mo"><img src="/theme/basic/img/image-04.jpg" alt=""></div>
+
+</body>
+</html>

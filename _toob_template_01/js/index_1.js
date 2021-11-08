@@ -29,7 +29,7 @@ $(function () {
     });
   };
   addAloneClass(".list_05 li", "on");
-  toggleAloneClass(".tp_modal_gnb li", "on");
+  addAloneClass(".tp_modal_gnb>li", "on");
   toggleClass = (target, className) => {
     $(target).click(function () {
       $(this).toggleClass(className);

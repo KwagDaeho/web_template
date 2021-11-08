@@ -9,7 +9,7 @@ header
   width: 100%
   height: 60px
   background-color: rgba(0,0,0,0.5)
-  border-bottom: 1px solid #fff
+  border-bottom: 1px solid #ccc
   color: #fff
   >div.wrap
     display: flex
@@ -30,7 +30,6 @@ section
   width: 100%
   padding: 5vh 0
 nav
-  width: 50%
   display: none
 h1
   font-size: 2em
@@ -66,6 +65,8 @@ $menu-icon-color--active: #ccc
 .menu-button
   width: 40px
   height: 40px
+.menu-button.is-active path
+  stroke: #000
 .menu-button:hover path,
 .menu-button:active path 
   stroke: $menu-icon-color--active
@@ -82,37 +83,50 @@ $menu-icon-color--active: #ccc
 .tp_header_logo, .tp_gnb
   height: 100%
   line-height: 60px
-.tp_header_logo a, .tp_gnb>li>a
-  padding: 0 10px
 .modal_window
   display: none
   z-index: 10
   position: fixed
   top: 0
-  left: 0
-  width: 100%
+  right: 0
+  width: 80%
   height: 100vh
+  padding-bottom: 100px
   background-color: #fff
   overflow: scroll
-  filter: invert(1.0)
+  >h1
+    padding-top: 70px
+    width: 90%
+    max-width: 1300px
+    margin: 0 auto
+    color: #000
+    font-weight: 900
+    text-align: left
 .tp_modal_gnb
-  padding-top: 20vh
+  max-width: 1300px
+  width: 90%
+  margin: 0 auto
+  padding-top: 30px
   >li
-    border-bottom: 1px solid #000
+    border-bottom: 1px solid #d5d5d5
     padding: 10px
+    padding-left: 30px
+    text-align: left
+    >h3
+      color: #ccc
     >a
       display: block
       color :#000
-      &::before, &::after
-        content: '·'
-        display: inline-block
-        margin: 0 15px
+      font-size: 1.2em
+      transition: 0.3s
     >ol
       overflow: hidden
       >li
         height: 0
         opacity: 0
         transition: 0.5s
+        a
+          color: #666
         &:first-of-type
           a
             padding-top: 20px
@@ -126,8 +140,10 @@ $menu-icon-color--active: #ccc
             opacity: 0
             transition: 0.5s
     &:first-of-type
-      border-top: 1px solid #000
+      border-top: 1px solid #d5d5d5
   >li.on
+    >a
+      color: rgba(200, 170, 120, 1)
     ol
       padding-bottom: 20px
       >li
@@ -135,7 +151,6 @@ $menu-icon-color--active: #ccc
         opacity: 1
         &:first-of-type
           height: 47px
-          margin-top: 10px
           &::before
             opacity: 1
 .tp_btn
@@ -148,27 +163,35 @@ $menu-icon-color--active: #ccc
     font-size: 0.8em
     transition: 0.5s
 .gnb_down
-  li
-    position: relative
-    min-width: 160px
+  position: relative
+  >li
+    >h3
+      display: none
+    >a
+      padding: 0 20px
     &:hover
       ol
         opacity: 1
+        height: 50px
+        border-bottom: 3px double #ccc
         li
           opacity: 1
           height: 50px
     ol
-      position: absolute
-      top: calc(100% - 1px)
+      position: fixed
+      top: 78px
       left: 0
-      width: 100%
-      border: 3px double #fff
-      background-color: rgba(0,0,0,0.4)
+      display: flex
+      justify-content: center
+      width: 100vw
+      height: 0
+      background-color: rgba(0,0,0,0.6)
       overflow: hidden
       transition: 0.5s
       opacity: 0
       li
         height: 0
+        margin: 0 20px
         line-height: 50px
         opacity: 0
         transition: 0.5s
@@ -196,382 +219,10 @@ $menu-icon-color--active: #ccc
   .tp_tel_num
     font-size: 2em
 
-#hover_menu
-  z-index: 11
-  height: 100%
-  position: fixed
-  background-color: #FED057
-  width: 300px
-  transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1)
-  transform: translateX(-100%)
-  left: 60px
-#hover_menu.expanded
-  transform: translateX(0%)
-  left: 0px
-.menu-inner
+#hd, #wrapper, #ft
+  min-width: 0
+#hd_pop, #hd_wrapper, #tnb .inner, #gnb .gnb_wrap, #container_wr, #ft_wr
+  width: inherit
+#container
   width: 100%
-  height: 100%
-  position: relative
-#blob
-  top: 0
-  z-index: -1
-  right: 60px
-  transform: translateX(100%)
-  height: 100%
-  position: absolute
-#blob-path
-  height: 100%
-  fill:  #FED057
-.hover_menu_hamburger
-  right: 20px
-  position: absolute
-  width: 20px
-  height: 20px
-  margin-top: -10px  
-.hover_menu_hamburger .line
-  width: 100%
-  height: 4px
-  background-color: #fff
-  position: absolute
-.hover_menu_hamburger .line:nth-child(2)
-  top: 50%
-  margin-top: -2px
-.hover_menu_hamburger .line:nth-child(3)
-  bottom: 0
-#hover_menu h1
-  position: fixed
-  right: 0
   margin: 0
-#hover_menu ul
-  padding: 0
-  list-style: none
-  width: 80%
-  margin-left: 10%
-  position: absolute
-  top: 10px
-#hover_menu ul li
-  color: #fff
-  font-family: sans-serif
-  padding: 20px 0
-.hover_menu_text
-  position: absolute
-  top: -15px
-  left: 100px
-  margin: 0
-  font-size: 20px
-  font-family: sans-serif
-  font-weight: 100
-  text-align: left
-
-
-/* GRID */
-.burger_list
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-  gap: 30px
-  padding: 20px
-.twelve
-  width: 100% 
-.eleven
-  width: 91.53% 
-.ten
-  width: 83.06% 
-.nine
-  width: 74.6% 
-.eight
-  width: 66.13% 
-.seven
-  width: 57.66% 
-.six
-  width: 49.2% 
-.five
-  width: 40.73% 
-.four
-  width: 32.26% 
-.three
-  width: 23.8% 
-.two
-  width: 15.33% 
-.one
-  width: 6.866% 
-
-
-.hamburger .line
-  width: 50px
-  height: 5px
-  background-color: #ecf0f1
-  display: block
-  margin: 8px auto
-  transition: all 0.3s ease-in-out
-.hamburger
-  width: 50px
-  height: 50px
-  margin: 10px
-  &:hover
-    cursor: pointer
-
-/* ONE */
-#hamburger-1.is-active .line:nth-child(2)
-  opacity: 0
-#hamburger-1.is-active .line:nth-child(1)
-  transform: translateY(13px) rotate(45deg)
-#hamburger-1.is-active .line:nth-child(3)
-  transform: translateY(-13px) rotate(-45deg)
-
-/* TWO */
-#hamburger-2.is-active .line:nth-child(1)
-  transform: translateY(13px)
-#hamburger-2.is-active .line:nth-child(3)
-  transform: translateY(-13px)
-
-/* THREE */
-#hamburger-3.is-active .line:nth-child(1),
-#hamburger-3.is-active .line:nth-child(3)
-  width: 40px
-#hamburger-3.is-active .line:nth-child(1)
-  transform: translateX(-10px) rotate(-45deg)
-#hamburger-3.is-active .line:nth-child(3)
-  transform: translateX(-10px) rotate(45deg)
-
-/* FOUR */
-#hamburger-4.is-active .line:nth-child(1),
-#hamburger-4.is-active .line:nth-child(3)
-  width: 40px
-#hamburger-4.is-active .line:nth-child(1)
-  transform: translateX(10px) rotate(45deg)
-#hamburger-4.is-active .line:nth-child(3)
-  transform: translateX(10px) rotate(-45deg)
-
-/* FIVE */
-#hamburger-5.is-active
-  transform: rotate(90deg)
-#hamburger-5.is-active .line:nth-child(2)
-  transition: none
-#hamburger-5 .line:nth-child(2)
-  transition-delay: 0.3s
-#hamburger-5.is-active .line:nth-child(2)
-  opacity: 0
-#hamburger-5.is-active .line:nth-child(1),
-#hamburger-5.is-active .line:nth-child(3)
-  width: 35px
-  transform-origin: right
-
-
-#hamburger-5.is-active .line:nth-child(1)
-  -webkit-transform: translateY(15px) rotate(45deg)
-  -ms-transform: translateY(15px) rotate(45deg)
-  -o-transform: translateY(15px) rotate(45deg)
-  transform: translateY(15px) rotate(45deg)
-
-
-#hamburger-5.is-active .line:nth-child(3)
-  -webkit-transform: translateY(-15px) rotate(-45deg)
-  -ms-transform: translateY(-15px) rotate(-45deg)
-  -o-transform: translateY(-15px) rotate(-45deg)
-  transform: translateY(-15px) rotate(-45deg)
-
-
-/* SIX */
-
-#hamburger-6.is-active
-  -webkit-transition: all 0.3s ease-in-out
-  -o-transition: all 0.3s ease-in-out
-  transition: all 0.3s ease-in-out
-  -webkit-transition-delay: 0.6s
-  -o-transition-delay: 0.6s
-  transition-delay: 0.6s
-  -webkit-transform: rotate(45deg)
-  -ms-transform: rotate(45deg)
-  -o-transform: rotate(45deg)
-  transform: rotate(45deg)
-
-
-#hamburger-6.is-active .line:nth-child(2)
-  width: 0px
-
-
-#hamburger-6.is-active .line:nth-child(1),
-#hamburger-6.is-active .line:nth-child(3)
-  -webkit-transition-delay: 0.3s
-  -o-transition-delay: 0.3s
-  transition-delay: 0.3s
-
-
-#hamburger-6.is-active .line:nth-child(1)
-  -webkit-transform: translateY(13px)
-  -ms-transform: translateY(13px)
-  -o-transform: translateY(13px)
-  transform: translateY(13px)
-
-
-#hamburger-6.is-active .line:nth-child(3)
-  -webkit-transform: translateY(-13px) rotate(90deg)
-  -ms-transform: translateY(-13px) rotate(90deg)
-  -o-transform: translateY(-13px) rotate(90deg)
-  transform: translateY(-13px) rotate(90deg)
-
-
-/* SEVEN */
-
-#hamburger-7.is-active .line:nth-child(1)
-  width: 30px
-
-
-#hamburger-7.is-active .line:nth-child(2)
-  width: 40px
-
-
-#hamburger-7.is-active .line
-  -webkit-transform: rotate(30deg)
-  -ms-transform: rotate(30deg)
-  -o-transform: rotate(30deg)
-  transform: rotate(30deg)
-
-
-/* EIGHT */
-
-#hamburger-8.is-active .line:nth-child(2)
-  opacity: 0
-
-
-#hamburger-8.is-active .line:nth-child(1)
-  -webkit-transform: translateY(13px)
-  -ms-transform: translateY(13px)
-  -o-transform: translateY(13px)
-  transform: translateY(13px)
-
-
-#hamburger-8.is-active .line:nth-child(3)
-  -webkit-transform: translateY(-13px) rotate(90deg)
-  -ms-transform: translateY(-13px) rotate(90deg)
-  -o-transform: translateY(-13px) rotate(90deg)
-  transform: translateY(-13px) rotate(90deg)
-
-
-/* NINE */
-
-#hamburger-9
-  position: relative
-  -webkit-transition: all 0.3s ease-in-out
-  -o-transition: all 0.3s ease-in-out
-  transition: all 0.3s ease-in-out
-
-
-#hamburger-9.is-active
-  -webkit-transform: rotate(45deg)
-  -ms-transform: rotate(45deg)
-  -o-transform: rotate(45deg)
-  transform: rotate(45deg)
-
-
-#hamburger-9:before
-  content: ""
-  position: absolute
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  width: 70px
-  height: 70px
-  border: 5px solid transparent
-  top: calc(50% - 35px)
-  left: calc(50% - 35px)
-  border-radius: 100%
-  -webkit-transition: all 0.3s ease-in-out
-  -o-transition: all 0.3s ease-in-out
-  transition: all 0.3s ease-in-out
-
-
-#hamburger-9.is-active:before
-  border: 5px solid #ecf0f1
-
-
-#hamburger-9.is-active .line
-  width: 35px
-
-
-#hamburger-9.is-active .line:nth-child(2)
-  opacity: 0
-
-
-#hamburger-9.is-active .line:nth-child(1)
-  -webkit-transform: translateY(13px)
-  -ms-transform: translateY(13px)
-  -o-transform: translateY(13px)
-  transform: translateY(13px)
-
-
-#hamburger-9.is-active .line:nth-child(3)
-  -webkit-transform: translateY(-13px) rotate(90deg)
-  -ms-transform: translateY(-13px) rotate(90deg)
-  -o-transform: translateY(-13px) rotate(90deg)
-  transform: translateY(-13px) rotate(90deg)
-
-
-/* TEN */
-
-#hamburger-10
-  -webkit-transition: all 0.3s ease-in-out
-  -o-transition: all 0.3s ease-in-out
-  transition: all 0.3s ease-in-out
-
-
-#hamburger-10.is-active
-  -webkit-transform: rotate(90deg)
-  -ms-transform: rotate(90deg)
-  -o-transform: rotate(90deg)
-  transform: rotate(90deg)
-
-
-#hamburger-10.is-active .line:nth-child(1)
-  width: 30px
-
-
-#hamburger-10.is-active .line:nth-child(2)
-  width: 40px
-
-
-/* ELEVEN */
-
-#hamburger-11
-  -webkit-transition: all 0.3s ease-in-out
-  -o-transition: all 0.3s ease-in-out
-  transition: all 0.3s ease-in-out
-
-
-#hamburger-11.is-active
-  animation: smallbig 0.6s forwards
-
-@keyframes smallbig
-  0%, 100%
-    transform: scale(1)
-  
-  50%
-    transform: scale(0)
-  
-
-#hamburger-11.is-active .line:nth-child(1),
-#hamburger-11.is-active .line:nth-child(2),
-#hamburger-11.is-active .line:nth-child(3)
-  transition-delay: 0.2s
-
-#hamburger-11.is-active .line:nth-child(2)
-  opacity: 0
-
-#hamburger-11.is-active .line:nth-child(1)
-  transform: translateY(13px) rotate(45deg)
-
-#hamburger-11.is-active .line:nth-child(3)
-  transform: translateY(-13px) rotate(-45deg)
-
-/* TWELVE */
-
-#hamburger-12.is-active .line:nth-child(1)
-  opacity: 0
-  transform: translateX(-100%)
-
-
-#hamburger-12.is-active .line:nth-child(3)
-  opacity: 0
-  transform: translateX(100%)
-
