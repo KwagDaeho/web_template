@@ -591,8 +591,31 @@ html {
 }
 
 .sub_banner_04 {
-  height: 500px;
   background-color: #fff;
+}
+
+.sub_banner_04 > .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub_banner_04 > .wrap::before, .sub_banner_04 > .wrap::after {
+  content: '';
+  display: block;
+  width: 35%;
+  height: 1px;
+  background-color: #000;
+}
+
+.sub_banner_04 > .wrap > h2 {
+  margin: auto;
 }
 
 .sec04 {

@@ -138,6 +138,18 @@ h1 {
   overflow: scroll;
 }
 
+.modal_window .hd_login {
+  position: static;
+  right: 0;
+  top: 0;
+  width: 90%;
+  margin: auto;
+}
+
+.modal_window .hd_login li a {
+  color: #999;
+}
+
 .modal_window > h1 {
   padding-top: 70px;
   width: 90%;

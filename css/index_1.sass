@@ -368,8 +368,22 @@ html
     max-width: 80%
     background-color: transparent
 .sub_banner_04
-  height: 500px
   background-color: #fff
+  >.wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &::before, &::after
+      content: ''
+      display: block
+      width: 35%
+      height: 1px
+      background-color: #000
+    >*
+    >h2
+      margin: auto
+      
+      
 .sec04
   background-color: #fff
 .table_01

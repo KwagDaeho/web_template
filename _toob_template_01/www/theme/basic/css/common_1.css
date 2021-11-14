@@ -141,6 +141,10 @@ h1 {
           filter: invert(1);
 }
 
+.modal_window .hd_login li a {
+  color: #999;
+}
+
 .tp_modal_gnb {
   padding-top: 20vh;
 }

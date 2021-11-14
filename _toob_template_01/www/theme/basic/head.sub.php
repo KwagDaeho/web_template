@@ -98,7 +98,6 @@ if(!defined('G5_IS_ADMIN'))
     echo $config['cf_add_script'];
 ?>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<link rel="stylesheet" href="/theme/basic/css/sub_01.css">
 <link rel="stylesheet" href="/theme/basic/css/reset.css" />
 <link rel="stylesheet" href="/theme/basic/css/common_1.css" />
 <link rel="stylesheet" href="/theme/basic/css/common_1_res.css" />

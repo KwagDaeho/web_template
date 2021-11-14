@@ -12,6 +12,9 @@ $(function () {
           element.classList.add("show");
         }
       }
+      if (window.innerHeight < element.getBoundingClientRect().top) {
+        element.classList.remove("show");
+      }
     }
   };
   window.addEventListener("load", saFunc);
