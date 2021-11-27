@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100300400500700900&display=swap");
+/* web font Qahiri */
+@import url("https://fonts.googleapis.com/css2?family=Qahiri&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.container {
+  background-color: #fff;
+}
+
+.headline {
+  margin-top: 20px;
+}
+
+.headline h1 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.headline span {
+  font-size: 16px;
+  color: #8e8e8e;
+  font-weight: 300;
+}
+
+.main_banner {
+  height: 150px;
+}
+
+.slogan {
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 230px;
+}
+
+.slogan h1 {
+  font-size: 17px;
+  color: var(--sub_color_f);
+  font-weight: 300;
+  margin: 35px 0;
+  position: relative;
+}
+
+.slogan h1::before {
+  content: "";
+  width: 2px;
+  height: 110px;
+  background-color: #a1a1a1;
+  position: absolute;
+  left: 50%;
+  top: 250%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.slogan img {
+  width: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    margin-top: 50px;
+  }
+  .headline h1 {
+    font-size: 34px;
+  }
+  .headline span {
+    font-size: 16px;
+  }
+  .main_banner {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrap {
+    width: 80%;
+  }
+  .headline h1 {
+    font-size: 34px;
+  }
+  .headline span {
+    font-size: 16px;
+  }
+  .slogan {
+    padding-top: 200px;
+    padding-bottom: 420px;
+  }
+  .slogan h1 {
+    font-size: 28px;
+  }
+  .slogan img {
+    width: 25px;
+  }
+}
+/*# sourceMappingURL=sub_common.css.map */

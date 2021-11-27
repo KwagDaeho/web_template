@@ -2,10 +2,6 @@ html {
   max-width: 1920px;
 }
 
-#main_contents .wrap {
-  min-height: 40vh;
-}
-
 .tp_list {
   margin-top: 30px;
 }
@@ -121,12 +117,12 @@ html {
 
 .list_09 li:last-of-type {
   background-image: url(../images/samsungu_index_01.png);
-  background-size: 150px;
+  background-size: 100px;
   background-position: 80% 50%;
 }
 
 .list_09 li:last-of-type:hover {
-  background-size: 190px;
+  background-size: 120px;
 }
 
 .sec03 {

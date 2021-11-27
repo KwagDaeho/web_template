@@ -355,4 +355,13 @@ h1 {
   width: 100%;
   margin: 0;
 }
+
+.bottom_line::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 10px auto;
+  background-color: #69a4d1;
+}
 /*# sourceMappingURL=common_1.css.map */

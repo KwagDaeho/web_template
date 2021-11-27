@@ -223,6 +223,12 @@
   .table_01 dl dt {
     border-left-width: 0;
   }
+  .list_09 li:last-of-type {
+    background-size: 150px;
+  }
+  .list_09 li:last-of-type:hover {
+    background-size: 190px;
+  }
 }
 
 @media screen and (min-width: 1600px) {

@@ -309,9 +309,9 @@ html {
   left: 0;
   top: 50px;
   width: 100%;
-  display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  opacity: 0;
 }
 
 .list_05 li dd {
@@ -325,16 +325,12 @@ html {
   font-weight: 700;
 }
 
-.list_05 .on {
-  opacity: 1.0;
-}
-
 .list_05 .on h2 {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list_05 .on div {
-  display: block;
+  opacity: 1;
 }
 
 .list_06 {
@@ -406,6 +402,8 @@ html {
 }
 
 .list_08 h2 {
+  width: 50%;
+  margin: auto;
   font-size: 2em;
   line-height: 2em;
 }
